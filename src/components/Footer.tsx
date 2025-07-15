@@ -1,49 +1,27 @@
 import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-[#0d1b2a] text-[#e0e1dd] border-t border-[#415a77]">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Palvelut */}
-          <div>
-            <h3 className="text-lg font-bold mb-6">Palvelut</h3>
-            <ul className="space-y-3 text-[#778da9]">
-              {[
-                "Sähköasennukset",
-                "Vikaselvitykset",
-                "Sähköauton latausasemat",
-                "Sähkösuunnittelu",
-                "Huoltopalvelut"
-              ].map((service, index) => (
-                <li key={index}>
-                  <a
-                    href="#services"
-                    className="hover:text-[#e0e1dd] transition-colors"
-                  >
-                    {service}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
 
           {/* Yhteystiedot */}
           <div>
-            <h3 className="text-lg font-bold mb-6">Yhteystiedot</h3>
-            <div className="space-y-4 text-[#778da9]">
+            <h3 className="text-2xl font-extrabold text-white mb-2">
+              Sonic-Sähkö Oy
+            </h3>
+            <p className="text-white mb-2">Y-tunnus: 3367138-8</p>
+            <p className="text-white mb-2">Vuotie 47 c, 00990 Helsinki</p>
+            <div className="space-y-2 text-white">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4" />
-                <span>+358 40 123 4567</span>
+                <span>+358 400 362 791</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4" />
-                <span>info@sonic-sahko.fi</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-4 w-4" />
-                <span>Helsinki, Vantaa, Espoo</span>
+                <span>sonic.sahko@outlook.com</span>
               </div>
             </div>
           </div>

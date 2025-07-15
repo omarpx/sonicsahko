@@ -57,13 +57,13 @@ const Contact = () => {
                 {
                   icon: <Phone className="h-7 w-7 text-[#0d1b2a]" />,
                   title: "Puhelin",
-                  text: "+358 40 123 4567",
+                  text: "+358 400 362 793",
                   note: "Päivystys 24/7",
                 },
                 {
                   icon: <Mail className="h-7 w-7 text-[#0d1b2a]" />,
                   title: "Sähköposti",
-                  text: "info@sonic-sahko.fi",
+                  text: "sonic.sahko@outlook.com",
                   note: "Vastaamme 24h sisällä",
                 },
                 {

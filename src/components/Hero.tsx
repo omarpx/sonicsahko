@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -10,7 +9,7 @@ const Hero = () => {
       id="home"
       className="relative bg-[#0d1b2a] text-[#e0e1dd] min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Taustakuva */}
+      {/* Taustakuva */} 
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
@@ -39,15 +38,20 @@ const Hero = () => {
             },
           }}
         >
+          {/* LOGO YLÄPUOLELLE */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="bg-[#e0e1dd] p-4 rounded-full shadow-xl"
+            transition={{ duration: 1, ease: "easeOut" }}
           >
-            <Zap className="h-10 w-10 text-[#0d1b2a]" />
+            <img
+              src="/soniclogo.jpg"
+              alt="Sonic-Sähkö Oy logo"
+              className="h-24 w-24 md:h-32 md:w-32 object-contain mx-auto"
+            />
           </motion.div>
 
+          {/* Otsikko */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,6 +61,7 @@ const Hero = () => {
             Tervetuloa Sonic-Sähkö Oy:lle – Uudenmaan luotettava sähköasentaja
           </motion.h1>
 
+          {/* Kuvaus */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

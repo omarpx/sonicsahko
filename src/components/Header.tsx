@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,12 +14,16 @@ const Header = () => {
     <header className="bg-[#0d1b2a] shadow-xl sticky top-0 z-50 border-b border-[#415a77]">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="bg-[#e0e1dd] p-2 rounded-lg">
-              <Zap className="h-6 w-6 text-[#0d1b2a]" />
-            </div>
-            <span className="text-xl font-bold text-[#e0e1dd]">Sonic-Sähkö Oy</span>
+          {/* Logo kuvana */}
+          <div className="flex items-center space-x-3">
+            <img
+              src="/soniclogo.jpg"
+              alt="Sonic-Sähkö Oy Logo"
+              className="h-10 w-10 object-contain"
+            />
+            <span className="text-xl font-bold text-[#e0e1dd]">
+              Sonic-Sähkö Oy
+            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -62,8 +66,8 @@ const Header = () => {
                 <a
                   key={i}
                   href={href}
-                  className="text-[#778da9] hover:text-[#e0e1dd] transition-colors font-medium"
                   onClick={toggleMenu}
+                  className="text-[#778da9] hover:text-[#e0e1dd] transition-colors font-medium"
                 >
                   {label}
                 </a>

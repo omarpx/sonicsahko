@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #1e40af;        /* syvä sininen */
-  --color-secondary: #2563eb;      /* kirkas sininen */
-  --color-accent: #facc15;         /* lämmin keltainen */
-  --color-background: #f9fafb;     /* vaalea tausta */
-  --color-foreground: #111827;     /* tumma teksti */
+  --color-primary: #1e40af;
+  --color-secondary: #2563eb;
+  --color-accent: #facc15;
+  --color-background: #f9fafb;
+  --color-foreground: #111827;
 
-  --color-muted: #6b7280;          /* harmaa teksti */
+  --color-muted: #6b7280;
   --color-card: #ffffff;
   --color-border: #e5e7eb;
 

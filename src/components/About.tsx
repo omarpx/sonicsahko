@@ -10,7 +10,7 @@ const About = () => {
       icon: <Clock className="h-8 w-8" />,
       number: "24/7",
       label: "Päivystysvalmius",
-      phone: "+358 40 123 4567"
+      phone: "+358 400 362 793"
     }
   ];
 
@@ -64,9 +64,9 @@ const About = () => {
                     {stat.label}
                   </div>
                   {stat.phone && (
-                    <div className="mt-4 flex items-center justify-center text-[#e0e1dd] text-sm gap-2">
-                      <Phone className="h-4 w-4" />
-                      <span>{stat.phone}</span>
+                    <div className="mt-4 flex items-center justify-center text-[#e0e1dd] gap-2 text-base font-semibold">
+                      <Phone className="h-5 w-5" />
+                      <span className="text-lg">{stat.phone}</span>
                     </div>
                   )}
                 </div>
